@@ -43,6 +43,7 @@ impl Ball {
     }
 
     fn update(&mut self, dt: f64) {
+        // move the ball according to its current speed and the dt parameter
         self.center.x += self.speed.x * dt;
         self.center.y += self.speed.y * dt;
     }
@@ -268,7 +269,7 @@ fn main() {
         WindowSettings::new("Pong", [width, height])
             .exit_on_esc(true)
             .opengl(opengl)
-            .samples(8) // TODO: Figure out the purpose of this line
+            .samples(8)
             .vsync(true)
             .into();
 
