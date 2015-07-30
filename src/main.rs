@@ -7,8 +7,8 @@ use std::path::Path;
 use glutin_window::GlutinWindow;
 use opengl_graphics::{GlGraphics, OpenGL};
 use opengl_graphics::glyph_cache::GlyphCache;
-use piston::event::{Event, Events, RenderEvent, EventLoop};
-use piston::input::{Button, Input, Motion, MouseButton};
+use piston::input::*;
+use piston::event_loop::*;
 use piston::window::WindowSettings;
 use graphics::{Context, Ellipse, Rectangle, Transformed};
 
